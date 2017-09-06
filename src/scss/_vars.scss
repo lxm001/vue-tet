@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+//@import "reset";
+
+//rem换算
+//$design_width: 750;
+$rem_length: 100;
+
+@function rem($px) {
+  @return $px / 2 / $rem_length + rem;
+}
+
+@function pxImage($px) {
+  @return $px / $rem_length * 2 / 3 + rem;
+}
+
+@function px2xImage($px) {
+  @return $px * 2 / $rem_length * 2 / 3 + rem;
+}
+
+
+/** 字体 ==> **/
+$font-size-title: rem(36);
+$font-size-small: rem(24);
+/** 字体 <== **/
+
+/**  颜色==> **/
+$color-blue: #1a82e2;
+/**  颜色<== **/
+
+/**  层级==> **/
+$z-index-hover: 1000;
+$z-index-header: 1000;
+$z-index-nav: 1000;
+/**  层级<== **/
+
+/**  ==> **/
+/**  <== **/

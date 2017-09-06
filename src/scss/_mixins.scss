@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+@import "vars";
+
+@mixin clearfix {
+  & {
+    *zoom: 1;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin flex($align-item: center, $justify-content: center) {
+  display: flex;
+  align-items: $align-item;
+  justify-content: $justify-content;
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin m-ellipsis($line: 2) {
+  white-space: normal;
+  word-wrap: break-word;
+  word-spacing: normal;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+@mixin position($l: 0, $t: 0) {
+  left: $l;
+  top: $t;
+}
+
+@mixin abs-pos($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin abs-center {
+  margin: auto;
+
+  @include abs-pos(0, 0, 0, 0);
+}
+
+@mixin text-replacement {
+  border: 0;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+}
+
+@mixin reset-box {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin full-screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin full-mask($zindex: 3) {
+  @include full-screen;
+
+  z-index: $zindex;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin minSize($width, $height: $width) {
+  min-width: $width;
+  min-height: $height;
+}
+
+@mixin gradientRow($start, $end) {
+  background: linear-gradient(to right, $start, $end);
+  background: -webkit-linear-gradient(left, $start, $end);
+}
+
+@mixin gradientColumn($start, $end) {
+  background: linear-gradient(to bottom, $start, $end);
+  background: -webkit-linear-gradient(top, $start, $end);
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+//定义placeholder颜色
+@mixin placeholder-color($color){
+  ::-moz-placeholder {
+    color: $color;
+  }
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+  :-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+//定义placeholder颜色设置字体
+@mixin placeholder-color-font($color,$font){
+  ::-moz-placeholder {
+    color: $color;
+    font-size: $font;
+  }
+  ::-webkit-input-placeholder {
+    color: $color;
+    font-size: $font;
+  }
+  :-ms-input-placeholder {
+    color: $color;
+    font-size: $font;
+  }
+}
