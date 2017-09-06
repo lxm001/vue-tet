@@ -20,18 +20,20 @@ $rem_length: 100;
 
 
 /** 字体 ==> **/
-$font-size-title: rem(36);
+$font-size-title: rem(32);
 $font-size-small: rem(24);
 /** 字体 <== **/
 
 /**  颜色==> **/
+$color-white: #ffffff;
 $color-blue: #1a82e2;
+
+$color-bg: #f0f0f0;
 /**  颜色<== **/
 
 /**  层级==> **/
 $z-index-hover: 1000;
-$z-index-header: 1000;
-$z-index-nav: 1000;
+$z-index-nav: 500;
 /**  层级<== **/
 
 /**  ==> **/

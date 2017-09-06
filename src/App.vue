@@ -12,7 +12,6 @@ export default {
 
 <style lang="scss">
 @import 'scss/_reset.scss';
-@import 'scss/_mixins.scss';
 /*#app {*/
   /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
   /*-webkit-font-smoothing: antialiased;*/
