@@ -2,9 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 //import Hello from '@/components/Hello'
 //const Hello = () => import('@/views/Hello');
-const ReservedParking = () => import('@/views/ReservedParking');
-const MyParking = () => import('@/views/MyParking');
-const UserCenter = () => import('@/views/UserCenter');
+const ReservedParking = () => import('@/views/reserved-parking/ReservedParking');
+const MyParking = () => import('@/views/my-parking/MyParking');
+const UserCenter = () => import('@/views/user-center/UserCenter');
 
 Vue.use(Router)
 

@@ -1,13 +1,13 @@
 <template>
-  <div class="reserved-parking">
-    <nav-footer current="reserve"></nav-footer>
+  <div class="my-parking">
+    <nav-footer current="my"></nav-footer>
   </div>
 </template>
 
 <script>
-  import NavFooter from '../components/NavFooter.vue';
+  import NavFooter from '../../components/NavFooter.vue';
   export default {
-    name: 'ReservedParking',
+    name: 'MyParking',
     data () {
       return {}
     },

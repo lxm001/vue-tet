@@ -11,7 +11,12 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'scss/_reset.scss';
+@import 'scss/reset';
+@import "scss/mixins";
+#app{
+  height: 100%;
+  background-color: $color-bg;
+}
 /*#app {*/
   /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
   /*-webkit-font-smoothing: antialiased;*/

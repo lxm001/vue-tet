@@ -1,16 +1,16 @@
 <template>
-  <div class="user-center">
+  <div class="personal-info">
     <nav-header title="车位锁问题车位锁问题车位锁问题"></nav-header>
-    <div class="user-center__content"></div>
+    <div class="personal-info__content"></div>
     <nav-footer current="user"></nav-footer>
   </div>
 </template>
 
 <script>
-  import NavHeader from '../components/NavHeader.vue';
-  import NavFooter from '../components/NavFooter.vue';
+  import NavHeader from '../../components/NavHeader.vue';
+  import NavFooter from '../../components/NavFooter.vue';
   export default {
-    name: 'UserCenter',
+    name: 'PersonalInfo',
     data () {
       return {}
     },
@@ -29,8 +29,8 @@
 </script>
 
 <style lang="scss">
-  @import '../scss/mixins';
-  .user-center{
+  @import '../../scss/mixins';
+  .personal-info{
     &__content{
       position: absolute;
       width: 100%;

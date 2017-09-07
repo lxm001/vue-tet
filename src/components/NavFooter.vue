@@ -75,7 +75,7 @@
     width: 100%;
     bottom: 0;
     z-index: $z-index-nav;
-    background-color: $color-bg;
+    background-color: $color-white;
     &__wrapper{
       display: flex;
     }
