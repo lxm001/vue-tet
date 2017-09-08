@@ -21,6 +21,7 @@ $rem_length: 100;
 
 /** 字体 ==> **/
 $font-size-title: rem(32);
+$font-size-content-big: rem(30);
 $font-size-content: rem(28);
 $font-size-content-min: rem(26);
 $font-size-small: rem(24);
@@ -31,6 +32,7 @@ $color-white: #ffffff;
 $color-blue: #1a82e2;
 
 $color-bg: #f0f0f0;
+$color-gray: #cccccc;
 /**  颜色<== **/
 
 /**  层级==> **/
@@ -38,5 +40,7 @@ $z-index-hover: 1000;
 $z-index-nav: 500;
 /**  层级<== **/
 
-/**  ==> **/
-/**  <== **/
+/**  圆角==> **/
+$border-radius-big: rem(10);
+$border-radius-small: rem(6);
+/**  圆角<== **/

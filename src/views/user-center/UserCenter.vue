@@ -8,7 +8,7 @@
           <p>测试</p>
         </div>
         <div class="user-center__top--bottom">
-          <router-link to="">
+          <router-link to="/user/bind-phone">
             <div>手机号码</div>
             <div>未绑定</div>
           </router-link>
@@ -22,7 +22,7 @@
       <!--功能列表-->
       <ul class="user-center__list">
         <li class="user-center__item">
-          <router-link to="">
+          <router-link to="/user/personal-info">
             <img class="user-center__item--left" src="../../assets/UserCenter/info.png" alt="">
             <span>个人信息</span>
             <img class="user-center__item--right" src="../../assets/UserCenter/arrow.png" alt="">
@@ -108,8 +108,9 @@
           border-radius: 50%;
         }
         p{
-          font: normal $font-size-content-min/rem(70) '苹方';
+          font-size: $font-size-content-min;
           height: rem(70);
+          line-height: rem(70);
           color: $color-white;
         }
       }
@@ -135,7 +136,8 @@
           justify-content: center;
           align-items: center;
           color: $color-white;
-          font: normal $font-size-small/rem(32) '苹方';
+          font-size: $font-size-small;
+          line-height: rem(32);
         }
       }
     }
@@ -154,7 +156,7 @@
         span{
           flex: 1;
           margin-left: rem(20);
-          font: normal $font-size-content '苹方';
+          font-size: $font-size-content;
           color: $color-blue;
         }
       }
@@ -162,7 +164,7 @@
         height: rem(40);
       }
       &--right{
-        height: rem(34);
+        height: rem(36);
       }
     }
   }
