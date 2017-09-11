@@ -29,7 +29,7 @@
           </router-link>
         </li>
         <li class="user-center__item">
-          <router-link to="">
+          <router-link to="/user/my-wallet">
             <img class="user-center__item--left" src="../../assets/UserCenter/wallet.png" alt="">
             <span>我的钱包</span>
             <img class="user-center__item--right" src="../../assets/UserCenter/arrow.png" alt="">
@@ -77,7 +77,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import '../../scss/mixins';
   .user-center{
     &__content{
@@ -86,8 +86,8 @@
       height: auto;
       top: 0;
       bottom: rem(98);
-      //background-color: $color-bg;
       overflow-y: scroll;
+      background-color: $color-bg;
     }
     //顶部个人信息
     &__top{

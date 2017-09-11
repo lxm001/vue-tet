@@ -28,7 +28,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import '../../scss/mixins';
   .personal-info{
     &__content{
@@ -37,8 +37,8 @@
       height: auto;
       top: rem(88);
       bottom: rem(98);
-      //background-color: $color-bg;
       overflow-y: scroll;
+      background-color: $color-bg;
     }
   }
 </style>

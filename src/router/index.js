@@ -7,6 +7,8 @@ const MyParking = () => import('@/views/my-parking/MyParking');
 const UserCenter = () => import('@/views/user-center/UserCenter');
 const BindPhoneNum = () => import('@/views/user-center/BindPhoneNum');
 const PersonalInfo = () => import('@/views/user-center/PersonalInfo');
+const LicensePlateInfo = () => import('@/views/user-center/LicensePlateInfo');
+const MyWallet = () => import('@/views/user-center/MyWallet');
 
 Vue.use(Router)
 
@@ -32,10 +34,20 @@ export default new Router({
       name: 'BindPhoneNum',
       component: BindPhoneNum
     },
-    {//个人中心
+    {//个人信息
       path: '/user/personal-info',
       name: 'PersonalInfo',
       component: PersonalInfo
+    },
+    {//车牌信息
+      path: '/user/license-plate-info',
+      name: 'LicensePlateInfo',
+      component: LicensePlateInfo
+    },
+    {//我的钱包
+      path: '/user/my-wallet',
+      name: 'MyWallet',
+      component: MyWallet
     },
     {
       //重定向

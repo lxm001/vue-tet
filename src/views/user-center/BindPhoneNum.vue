@@ -174,7 +174,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import "../../scss/mixins";
   .phone-num{
     &__content{
@@ -183,6 +183,7 @@
       height: auto;
       top: rem(88);
       overflow-y: scroll;
+      background-color: $color-bg;
       padding: rem(100) rem(30) 0;
     }
     //输入手机号 验证码 公共样式

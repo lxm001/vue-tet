@@ -14,7 +14,7 @@
           </router-link>
         </li>
         <li class="personal-info__item">
-          <router-link to="">
+          <router-link to="/user/license-plate-info">
             <img src="../../assets/UserCenter/license-plate.png" class="personal-info__item--icon" alt="">
             <span class="personal-info__item--title">车牌信息</span>
             <span class="personal-info__item--content">默认车牌号：沪A12345</span>
@@ -67,7 +67,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import '../../scss/mixins';
   .personal-info{
     &__content{
@@ -75,8 +75,8 @@
       width: 100%;
       height: auto;
       top: rem(88);
-      //background-color: $color-bg;
       overflow-y: scroll;
+      background-color: $color-bg;
     }
     //个人信息内容列表
     &__item{
