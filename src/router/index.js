@@ -9,6 +9,8 @@ const BindPhoneNum = () => import('@/views/user-center/BindPhoneNum');
 const PersonalInfo = () => import('@/views/user-center/PersonalInfo');
 const LicensePlateInfo = () => import('@/views/user-center/LicensePlateInfo');
 const MyWallet = () => import('@/views/user-center/MyWallet');
+const DepositRefund = () => import('@/views/user-center/DepositRefund');
+const PayDeposit = () => import('@/views/user-center/PayDeposit');
 
 Vue.use(Router)
 
@@ -48,6 +50,16 @@ export default new Router({
       path: '/user/my-wallet',
       name: 'MyWallet',
       component: MyWallet
+    },
+    {//押金退款
+      path: '/user/deposit-refund',
+      name: 'DepositRefund',
+      component: DepositRefund
+    },
+    {//缴纳押金
+      path: '/user/pay-deposit',
+      name: 'PayDeposit',
+      component: PayDeposit
     },
     {
       //重定向

@@ -12,9 +12,9 @@
       <!--查看列表-->
       <ul class="my-wallet__list">
         <li class="my-wallet__item">
-          <router-link to="">
+          <router-link :to="isDeposit ? '/user/deposit-refund' : '/user/pay-deposit'">
             <span class="my-wallet__item--title">我的押金</span>
-            <span class="my-wallet__item--content">299，押金退款</span>
+            <span class="my-wallet__item--content">{{ isDeposit ? '299，押金退款' : '' }}</span>
             <img src="../../assets/UserCenter/arrow.png" alt="">
           </router-link>
         </li>
@@ -42,7 +42,9 @@
   export default {
     name: 'MyWallet',
     data () {
-      return {}
+      return {
+        isDeposit: false,//是否缴纳押金
+      }
     },
     components: {
       NavHeader
